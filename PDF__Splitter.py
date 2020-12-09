@@ -21,7 +21,7 @@ def isResume(filePath):
     text= (page.extractText())
     lowerText=str(text.lower())
     #list of words/phrases to look for in the pdfText (make all lowercase)
-    matches=['email', 'e-mail', '@']
+    matches=['email', 'e-mail', '@','gpa']
     #number of char in the reduced content view
     if len(text) <=250:
         return False
