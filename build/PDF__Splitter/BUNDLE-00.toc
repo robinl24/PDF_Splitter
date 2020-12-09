@@ -1,0 +1,3 @@
+([('PDF__Splitter',
+   '/Users/i544474/code/QP_410_PDF_Splitter/PDF_Splitter/dist/PDF__Splitter',
+   'EXECUTABLE')],)
