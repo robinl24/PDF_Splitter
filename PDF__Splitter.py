@@ -51,7 +51,7 @@ def split_pdf():
     #Tracks when to create a new folder
     numFolder=1
     folderStorage=0
-    for page in range(0,pdf.getNumPages()):
+    for page in range(0,10):#pdf.getNumPages()):
 
         #creates folder to store files in (for zip)
         if folderStorage==0:
@@ -75,11 +75,11 @@ def split_pdf():
             previousFile=output_filename
             #checks whether the file is a valid Resume based on file size then isResume
         #time.sleep(3)
-        if page != 0 and fileSize >=50000:
+        if page != 0 and fileSize >=200000:
             
             folderStorage+=fileSize
             
-        elif page != 0 and fileSize <50000 and isResume(output_filename) == False: #biggest blank page size was from Anderson FTMBA Class of 2021 page 230 (44kb) 
+        elif page != 0 and fileSize <200000 and isResume(output_filename) == False: #biggest blank page size was from Anderson FTMBA Class of 2021 page 230 (44kb) 
             del_Pages.append(page+1)
             #print(output_filename)
             os.remove(output_filename)
